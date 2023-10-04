@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+    <h1>Print 1 to 100 Prime Number</h1>
+    <script>
+        for ( var i= 1; i <=100; i++)
+        {
+            var not_prime= false;
+            for( var p =2; p<=i; p++)
+            {
+                if(i % p===0 && p !==i){
+                    not_prime = true;
+                }
+            }
+            if (not_prime ===false)
+            document.write( i + "<br>")
+        }
+        
+    </script>
+</body>
+</html>

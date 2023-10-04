@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Form </title> 
+<link rel="icon" type="image/x-icon" href="asset/kics.ico"/>
+<style>
+h1{
+  text-align: center;
+  color: #0080b8;
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0080b8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a0f9;
+}
+input[type=reset]{
+  width: 100%;
+  background-color: #0080b8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset]:hover {
+  background-color: #45a0f9;
+}
+input[type=button] {
+  width: 100%;
+  background-color: #0080b8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=button]:hover {
+  background-color: #45a0f9;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2fc;
+  padding: 10px;
+}
+p{
+color:#9e002f
+}
+</style>
+</head>
+<body>
+<h1>Registration Form</h1>
+<p><strong> Note:</strong>I have used 17<strong> input types</strong> in my assignment which are as follow:</p>
+<form>
+<div>
+<p>1:This is<strong> text </strong>input type</p>
+<lable for="fname"> <strong>First Name</strong></lable> <br/>
+<input type="taxt" id="fname" name="fname" placeholder="Abdul Rehman" required/><br/>
+<lable for="fname"><strong>Last Name</strong></lable><br/>
+<input type="taxt" id="lname" name="lname" placeholder="Ashraf" required /> <br>
+</div>
+<div>
+<p>2:This is <strong>email</strong> input type</p>
+<lable for="email"><strong> Enter Your Email</strong></lable><br/>
+<input type="email" id="email" name="email" placeholder="abcdef@gmail.com" required/><br/>
+</div>
+<div>
+<p>3:This is <strong>password</strong> input type</p>
+<lable for="password"><strong>Password</strong></lable><br/>
+<input type="password" id="password" name="password" required />
+</div>
+<div>
+<p>4:This is <strong>date</strong> input type</p>
+  <label for="birthday"><strong>Birthday:</strong></label>	
+  <input type="date" id="birthday" name="birthday">
+</div>
+<div>
+<p>5:This is <strong>radio</strong> input type</p>
+<h4> <strong>Choose your Gender </strong></h4>
+<input type="radio" id="male" name="gender" value="Male" required/>
+<lable for="male">Male</lable><br/>
+<input type="radio" id="female" name="gender" value="Female" required/>
+<lable for="female">Female</lable><br/>
+<input type="radio" id="other" name="gender" value="Other" required/>
+<lable for="other">Other</lable><br/>
+</div>
+<div>
+<p>6:This is <strong>checkbox</strong> input type</p>
+<h4><strong>Chooce Your Course</strong></h4>
+  <input type="checkbox" id="course1" name="course1" value="Web">
+  <label for="course1"> Web Development</label>
+  <input type="checkbox" id="course2" name="course2" value="App">
+  <label for="course2"> App Development</label><br>
+  <input type="checkbox" id="course3" name="course3" value="Game">
+  <label for="course3"> Game Development</label><br> 
+  <input type="checkbox" id="course4" name="course4" value="AI and Python">
+  <label for="course4"> AI and Python</label><br> 
+</div>
+<div>
+<p>7:This is <strong>tel</strong> input type</p>
+  <label for="phone"><strong>Enter a phone number:</strong></label><br>
+  <input type="tel" id="phone" name="phone" placeholder="0300-0123012" pattern="[0-9]{4}-[0-9]{7}" required><br><br>
+</div>
+<div>
+<p>8:This is <strong>file</strong> input type</p>
+  <label for="cv"><strong>Send Your CV:</strong></label>
+  <input type="file" id="cv" name="cv"><br>
+</div>
+<div>
+<p>9:This is <strong>number</strong> input type</p>
+  <label for="quantity"><strong>Select course Quantity (between 1 and 4):</strong></label>
+  <input type="number" id="quantity" name="quantity" min="1" max="4"><br/>
+</div>
+<div>
+<p>10:This is <strong>rang</strong> input type</p>
+  <label for="rang"><strong>Grip in English(between 0 and 5):</strong></label>
+  <input type="range" id="vol" name="rang" min="0" max="5"><br>
+</div>
+<div>
+<p>11:This is <strong>time</strong> input type</p>
+  <label for="tim"><strong>Select a Interview time:</strong></label>
+  <input type="time" id="tim" name="tim"><br/>
+</div>
+<div>
+<p>12:This is <strong>color</strong> input type</p>
+  <label for="favcolor"> <strong>Select your favorite color:</strong></label>
+  <input type="color" id="favcolor" name="favcolor" value="#070F73"><br/><br/>
+</div>
+<div>
+<p>13:This is <strong>url</strong> input type</p>
+  <label for="website"><strong>Add your website Link:</strong></label>
+  <input type="url" id="website" name="website"><br/>
+</div>
+<div>
+<p>14:This is <strong>button</strong> input type</p>
+  <input type="button" onclick="alert('Hello World!')" value="Click Me!"><br/>
+</div>
+<div>
+<p>15:This is <strong>submit</strong> input type</p>
+  <input type="submit">
+</div>
+<div>
+<p>16:This is <strong>reset</strong> input type</p>
+  <input type="reset"/><br/>
+</div>
+<div>
+<p>17:This is <strong>search</strong> input type</p>
+  <label for="gsearch"><h2>Search:</h2></label>
+  <input type="search" id="gsearch" name="gsearch">
+</div>
+</form>
+</body> 
+</html>
